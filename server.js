@@ -39,6 +39,20 @@ app.get("/about", (req, res) => {
     pageTitle: "About Page"
   });
 });
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "About Page",
+    projects: [{
+        name: 'Weather App',
+        desc: 'node js console app the gives you description'
+      },
+      {
+        name: 'node web server App',
+        desc: 'node js api with express'
+      }
+    ]
+  });
+});
 app.get("/bad", (req, res) => {
   res.send({
     error: "Unable to fulfill the request"
