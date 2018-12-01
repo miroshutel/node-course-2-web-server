@@ -12,7 +12,11 @@
     {{> header}}
     <ul class="project-list">
         {{#each projects}}
-        <li>{{this.name}}&nbsp;-&nbsp;{{this.desc}}</li>
+        <li>
+            <a href="{{this.url}}" target="_blank">
+                {{this.name}}&nbsp;-&nbsp;{{this.desc}}
+            </a>
+        </li>
         {{/each}}
     </ul>
     {{> footer}}

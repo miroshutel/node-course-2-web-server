@@ -44,11 +44,13 @@ app.get("/projects", (req, res) => {
     pageTitle: "About Page",
     projects: [{
         name: 'Weather App',
-        desc: 'node js console app the gives you description'
+        desc: 'node js console app the gives you description',
+        url:'https://github.com/miroshutel/WeatherApp'
       },
       {
         name: 'node web server App',
-        desc: 'node js api with express'
+        desc: 'node js api with express',
+        url:'https://github.com/miroshutel/node-course-2-web-server'
       }
     ]
   });
